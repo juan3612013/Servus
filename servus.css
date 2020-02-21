@@ -1,0 +1,628 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+	justify-content: space-between;
+}
+
+body {
+	background-color:#232020;
+	height: 100vh;
+}
+
+#contenedor{
+	display:flex;
+	flex-wrap:nowrap;
+}
+
+header {
+	background-color:#ff7315;
+	display:flex;
+	width:100%;
+	border-bottom:1px solid #232020;
+	justify-content: center;
+    align-items: center;
+	z-index:1;
+}
+
+header h2, header h4, header h5{
+	color:#f4f4f4;
+	font-family:Sans-serif;
+	font-size:25px;
+	text-align:center;
+	padding:3px;
+	word-wrap: break-word;
+}
+
+a{
+	text-decoration:none;
+}
+
+h3{
+	color:#f4f4f4;
+	font-family:sans-serif;
+	font-size:15px;
+}
+
+#contenido {
+	display:flex;
+	background-color:#f4f4f4;
+	margin:30px;
+	width:83%;
+	height:auto;
+	border:1px solid #3a3535;
+	flex-wrap:wrap;
+	flex-direction:row;
+	justify-content: space-evenly;
+}
+
+#check1, .menuoculto{
+		display:none;
+	}
+
+/*------------------------------------------------Index------------------------------------------------*/
+
+#contenidotarjetas {
+	background-color:white;
+	display:flex;
+	margin:30px;
+	width:100%;
+	height:auto;
+	border:1px solid grey;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+
+.tarjetas{
+	margin:30px;
+	width:10%;
+	height:200px;
+	border:1px solid grey;
+}
+
+#cuotas{
+	background:url("../img/cuotas.png");
+	background-size:cover;
+}
+
+#ordenadores{
+	background:url("../img/ordenadores.png");
+	background-size:cover;
+}
+
+#descargas{
+	background:url("../img/descargas.png");
+	background-size:cover;
+}
+
+#ciclos{
+	background:url("../img/ciclos.png");
+	background-size:cover;
+}
+
+#webs{
+	background:url("../img/webs.png");
+	background-size:cover;
+}
+
+#profesores{
+	background:url("../img/profesores.png");
+	background-size:cover;
+}
+
+.tarjetas p{
+	visibility:hidden;
+	font-family:Sans-serif;
+	text-align:center;
+}
+
+.tarjetas:hover p{
+	visibility:visible;
+}
+
+.tarjetas div{
+	display:flex;
+	width:100%;
+	height:100%;
+	justify-content: center;
+    align-items: center;
+}
+
+.tarjetas:hover div{
+	background-color:#ffffffa6;
+	transition: background-color 200ms linear;
+}
+
+/*------------------------------------------------Menú lateral------------------------------------------------*/
+
+#menulateral {
+	max-width: 170px;
+	background-color:#3a3535;
+}
+
+#menulateral ul{
+	list-style-type: none;
+}
+
+#menulateral ul li{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+#menulateral ul li input[type=checkbox] {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+#menulateral ul li h3{
+	padding-left: 10px;
+	word-wrap: break-word;
+}
+
+#menulateral ul ul{
+	display: none;
+}
+
+#menulateral ul li input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+#menulateral a{
+	text-decoration: none;
+	color:black;
+	background-color: #ff7315;
+}
+
+.objetomenu{
+	background-color:#312c2c;
+}
+
+h3{
+	padding-bottom:2px;
+	border-bottom:2px solid #ff7315;
+	cursor:pointer;
+}
+
+.objetomenu h3{
+	border-bottom:none;
+}
+
+/*------------------------------------------------Ciclos------------------------------------------------*/
+
+#selector{
+	display: flex;
+	flex-direction: row;
+	overflow: hidden;
+}
+
+#selector div a{
+	text-decoration: none;
+	color :black;
+}
+
+.TarjetaCursos{
+	margin:30px;
+	width:357px;
+	height:200px;
+	border:1px solid grey;
+}
+
+.TarjetaCursos p{
+	font-family:Sans-serif;
+	text-align:center;
+}
+
+.TarjetaCursos div{
+	display:flex;
+	width:100%;
+	height:100%;
+	justify-content: center;
+    align-items: center;
+}
+
+.TarjetaCursos:hover div{
+	background-color:#ffffffa6;
+	transition: background-color 200ms linear;
+}
+
+#DAM_AS{
+	display: grid;
+  	width: 100%;
+  	height: auto;
+  	grid-template-areas: "PR SI BD PROG LMSGI ED FOL"
+  						 "SEC AD DI PMDM PSP SGE EIE";
+}
+
+#ASIR_AS{
+	display: grid;
+  	width: 100%;
+  	height: auto;
+  	grid-template-areas: "PR PAR FH GBD ISO LMSGI FOL"
+  						 "SEC IAW SAD ASGBD SRI ASO EIE";
+}
+
+#SMR_AS{
+	display: grid;
+  	width: 100%;
+  	height: auto;
+  	grid-template-areas: "PR MME SOM AO RL FOL"
+  						 "SEC SOR SI SR AW EIE";				 
+}
+#SEC{
+height: 50px;
+top:50%;
+background-color: #3a3535;
+color:White;
+}
+#PR{
+height: 50px;
+top:50%;
+}
+
+.TarjetasCiclos{
+	margin:20px;
+	padding:3px;
+	width:50%;
+	height:200px;
+	border:1px solid grey;
+}
+
+.TarjetasCiclos p{
+	font-family:Sans-serif;
+	text-align:center;
+	font-size:12px;
+}
+
+.TarjetasCiclos div{
+	display:flex;
+	width:100%;
+	height:100%;
+	justify-content: center;
+    align-items: center;
+}
+
+.TarjetasCiclos:hover div{
+	background-color:#ffffffa6;
+	transition: background-color 200ms linear;
+}
+/*------------------------------------------------Alumnos------------------------------------------------*/
+
+.alumnos{
+	margin:30px;
+	width:15%;
+	height:200px;
+	border:1px solid grey;
+	transition: 200ms linear;
+}
+
+.alumnos p{
+	visibility:hidden;
+	font-family:Sans-serif;
+	text-align:center;
+}
+
+.alumnos:hover p{
+	visibility:visible;
+}
+
+.alumnos div{
+	display:flex;
+	width:100%;
+	height:100%;
+	justify-content: center;
+    align-items: center;
+}
+
+.alumnos:hover div{
+	background-color:#ffffffa6;
+	transition: background-color 200ms linear;
+}
+
+.alumnos a{
+	text-decoration: none;
+	color:black;
+}
+
+#AlumnoDAM1{
+	background:url("../img/albertodihe.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM2{
+	background:url("../img/albertomeza.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM3{
+	background:url("../img/alejandrojuma.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM4{
+	background:url("../img/danielmesa.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM5{
+	background:url("../img/danielsaal.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM6{
+	background:url("../img/davidrapo.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM7{
+	background:url("../img/davidrobl.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM8{
+	background:url("../img/emiliogapi.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM9{
+	background:url("../img/fernandomado.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM10{
+	background:url("../img/francescgumo.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM11{
+	background:url("../img/germanrcroca.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM12{
+	background:url("../img/jaimesaro.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM13{
+	background:url("../img/jairoocro.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM14{
+	background:url("../img/jazzviji.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM15{
+	background:url("../img/jesushera.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM16{
+	background:url("../img/josegaza.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM17{
+	background:url("../img/josesara.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM18{
+	background:url("../img/juancave.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM19{
+	background:url("../img/juannula.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM20{
+	background:url("../img/manuelgase.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM21{
+	background:url("../img/pablogisa.jpg");
+	background-size:cover;
+}
+
+#AlumnoDAM22{
+	background:url("../img/sergiodega.jpg");
+	background-size:cover;
+}
+
+/*------------------------------------------------Directorio de profesores------------------------------------------------*/
+
+.profesores{
+	display:flex;
+	margin:30px;
+	width:150px;
+	height:150px;
+	border:1px solid grey;
+	background:url("../img/correo.png");
+	background-size:cover;
+	flex-wrap:wrap;
+	flex-direction:column;
+	justify-content:flex-end;
+	position:relative;
+	transition: 200ms linear;
+}
+
+.correo{
+	font-size:21px;
+	background-color:#ffffffa6;
+	text-align:center;
+	font-family:Sans-serif;
+	z-index:1;
+	visibility:hidden;
+	position:absolute;
+}
+
+.profesores:hover .correo{
+	visibility:visible;
+}
+
+.nombresprofes{
+	font-size:20px;
+	background-color:#ffffffa6;
+	text-align:center;
+	font-family:Sans-serif;
+	z-index:1;
+}
+
+.profesores:hover .nombresprofes{
+	visibility:hidden;
+}
+
+/*------------------------------------------------Formulario------------------------------------------------*/
+
+.formulario
+{
+	margin:16px 0px 16px 25px;
+}
+
+#decoracionimagen{
+	margin:10px 0px 10px 90px;
+	border:1px solid grey;
+}
+
+/*------------------------------------------------Diseño responsivo------------------------------------------------*/
+
+@media screen and (max-width: 992px) {
+	
+	#contenido {
+		width:75%;
+	}
+	h3{
+		font-size:7px;
+	}
+	
+	/*------------------------------------------------Menú lateral------------------------------------------------*/
+	
+	.menuoculto{
+	width: 2.2rem;
+	height: 2.4rem;
+	background-color:#ff7315;
+	border-radius: 0.2rem;
+	position: fixed;
+	top:50vh;
+	left:5vh;
+	font-family:Sans-serif;
+	font-size:1.5rem;
+	color:#f4f4f4;
+	text-align:center;
+	transition: left 0.7s;	
+	z-index:2;
+	}
+
+	#check1:checked ~ .menuoculto{
+	left:40vh;
+	border-radius: 0 0.5rem  0.5rem 0;
+	}
+	
+	#menulateral{
+		max-width: 40vh;
+		height:100vh;
+		position:fixed;
+		top:0vh;
+		left:-40vh;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		transition:left 0.4s;
+		z-index:2;
+	}
+	
+	#check1:checked ~ #menulateral{
+		left:0vh;
+	}
+	
+	.menuoculto{
+		display:inline;
+	}
+	
+	/*------------------------------------------------Directorio de profesores------------------------------------------------*/
+	
+	.profesores{
+	width:80px;
+	height:80px;
+	}
+
+	.correo, .nombresprofes p{
+	font-size:15px;
+	}
+
+	/*------------------------------------------------Alumnos------------------------------------------------*/
+
+	.alumnos{
+	width:13%;
+	height:100px;
+	}
+
+	.alumnos p{
+	font-size:10px;
+	}
+	
+	/*------------------------------------------------Ciclos------------------------------------------------*/
+	
+	.TarjetasCiclos{
+	margin:20px;
+	width:760%;
+	height:90px;
+	border:1px solid grey;
+	}
+	
+	.TarjetasCiclos p{
+	font-size:8px;
+	word-wrap: break-word;
+	}
+
+@media screen and (max-width: 1200px) {
+
+	#contenido {
+		width:80%;
+	}
+	h3{
+		font-size:12px;
+	}
+	
+	/*------------------------------------------------Directorio de profesores------------------------------------------------*/
+	
+	.profesores{
+	width:80px;
+	height:80px;
+	}
+
+	.correo, .nombresprofes p{
+	font-size:15px;
+	}
+	
+	/*------------------------------------------------Ciclos------------------------------------------------*/
+	
+	.TarjetasCiclos{
+	margin:20px;
+	width:30%;
+	height:80px;
+	border:1px solid grey;
+	}
+	
+	.TarjetasCiclos p{
+	font-size:5px;
+	word-wrap: break-word;
+	}	
+
+	/*------------------------------------------------Alumnos------------------------------------------------*/
+
+	.alumnos{
+	width:13%;
+	height:100px;
+	}
+
+	.alumnos p{
+	font-size:10px;
+	}
+}

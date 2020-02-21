@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Servus - Directorio de Profesores</title>
+		<meta name="viewport" content="initial-scale=1"/>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="css/servus.css"/>
+	</head>
+	<body>
+		<header>
+			<a href="index.html"><h2>DEPARTAMENTO DE INFORMÁTICA Y COMUNICACIONES</h2>
+			<h4>- I.E.S. FERNANDO AGUILAR QUIGNON -</h4>
+			<h5>DIRECTORIO DE PROFESORES</h5></a>
+		</header>
+		<div id="contenedor">
+			<input type="checkbox" class="checkbox" id="check1"/>
+			<label class="menuoculto" for="check1">|||</label>
+			<div id="menulateral">
+				<ul>
+					<a href=""><li><h3>Consulta cómo está tu cuota</h3></li></a>
+					<a href="https://servus.inf/glpi"><li><h3>¿Tienes problemas con un PC?</h3></li></a>
+					<a href="ftp://servus.inf/anon/DESCARGAS"><li><h3>Archivos usados en clase</h3></li></a>
+					<li>
+					<input type="checkbox" id="desplegable1">
+					<label for="desplegable1"><h3>Los Ciclos del Departamento</h3></label>
+					<ul>
+						<a href="ciclosdam.html"><li class="objetomenu"><h3>ASIR</h3></li></a>
+						<a href="ciclosasir.html"><li class="objetomenu"><h3>DAM</h3></li></a>
+						<a href="ciclossmr.html"><li class="objetomenu"><h3>SMR</h3></li></a>
+					</ul>
+					</li>
+					<li>
+						<input type="checkbox" id="desplegable2">
+						<label for="desplegable2"><h3>Las Webs de los alumnos</h3></label>
+						<ul>
+							<li class="objetomenu"><h3>1A ASIR</h3></li>
+							<li class="objetomenu"><h3>2A ASIR</h3></li>
+							<a href="alumnosdama.html"><li class="objetomenu"><h3>1A DAM</h3></li></a>
+							<li class="objetomenu"><h3>1B DAM</h3></li>
+						</ul>
+					</li>
+					<a href="directoriodeprofesores.html"><li><h3>Los Profesores del Departamento</h3></li></a>
+				</ul>
+			</div>
+			<div id="contenido">
+				<form action="enviar.php" method="post">
+					<div class="formulario">
+						<input id="campoasunto" type="text" required="required" placeholder="Asunto"/>
+					</div>
+					<div class="formulario">
+						<input id="campoemail" type="email" required="required" placeholder="Tu correo electrónico"/>
+					</div>
+					<div class="formulario">
+						<textarea id="campotexto" type="text" required="required" placeholder="Mensaje" rows="8" cols="50"></textarea>
+					</div>
+					<div>
+						<input type="file" accept="image/*,.7zip.zip,.rar"/>
+					</div>
+					<div class="formulario">
+						<button id="botoneviar" type="submit">Enviar</button>
+					</div>
+				</form>
+				<img id="decoracionimagen" src="img/escribirform.jpeg" width="500px"/>
+			</div>
+		</div>
+	</body>
+</html>
